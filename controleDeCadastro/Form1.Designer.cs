@@ -42,6 +42,7 @@
             this.lblQtd = new System.Windows.Forms.Label();
             this.txbQtd = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
+            this.btnImport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,6 +106,7 @@
             this.btnExpor.TabIndex = 5;
             this.btnExpor.Text = "Exportar Lista";
             this.btnExpor.UseVisualStyleBackColor = true;
+            this.btnExpor.Click += new System.EventHandler(this.btnExpor_Click);
             // 
             // txbNome
             // 
@@ -179,11 +181,23 @@
             this.lblID.TabIndex = 15;
             this.lblID.Text = "ID";
             // 
+            // btnImport
+            // 
+            this.btnImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImport.Location = new System.Drawing.Point(236, 633);
+            this.btnImport.Name = "btnImport";
+            this.btnImport.Size = new System.Drawing.Size(204, 49);
+            this.btnImport.TabIndex = 6;
+            this.btnImport.Text = "Importar Lista";
+            this.btnImport.UseVisualStyleBackColor = true;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1250, 694);
+            this.Controls.Add(this.btnImport);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.txbQtd);
             this.Controls.Add(this.lblQtd);
@@ -222,6 +236,7 @@
         private System.Windows.Forms.Label lblQtd;
         private System.Windows.Forms.TextBox txbQtd;
         private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Button btnImport;
     }
 }
 
